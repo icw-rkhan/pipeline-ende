@@ -16,7 +16,7 @@ class RkEnDeCipher:
 
     def __init__(self):
         self.switcher = {"--encr": self.encr, "--decr":self.dece, "--install": self.install, "--reset": self.reset}
-        self.cipher_file = "./ext/__cipherkey.o"
+        self.cipher_file = "__cipherkey.o"
 
     def encr(self, password):
         if password is None or len(password) <= 0:

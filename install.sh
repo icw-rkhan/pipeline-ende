@@ -1,4 +1,5 @@
-python3 ende.py --install
+export ENDE_HOME="$HOME/rkhan/pipeline-ende"
+python3 "$ENDE_HOME/ende.py" --install
 chmod +x ende.sh
-sudo export PATH=$PATH:.
+export PATH=$PATH:$ENDE_HOME
 echo [pipeline-ende] install done.
