@@ -1,2 +1,2 @@
-ENDE_HOME="$HOME/rkhan/pipeline-ende"
-sudo python3 "$ENDE_HOME/ende.py" $@
+ENDE_HOME="/devtools/pipeline-ende"
+sudo python "$ENDE_HOME/ende.py" $@
