@@ -1,6 +1,6 @@
 test="raja_khan"
-x="$(py ende.py --encr $test)"
-y="$(py ende.py --decr $x)"
+x="$(python3 ende.py --encr $test)"
+y="$(python3 ende.py --decr $x)"
 echo $test
 
 if [ "$test" = "$y" ]; then

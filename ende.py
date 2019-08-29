@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('./ext')
+#sys.path.append('./ext')
 
 from cryptography.fernet import Fernet
 

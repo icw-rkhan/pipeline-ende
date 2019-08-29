@@ -1,1 +1,1 @@
-py ende.py $@
+python3 ende.py $@
