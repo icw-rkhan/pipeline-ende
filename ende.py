@@ -3,7 +3,7 @@ import sys, os
 
 from cryptography.fernet import Fernet
 
-class RkEnDeCipher:
+class EnDeCipher:
 
     def process(self, argument):
         func = self.switcher.get(argument[1], lambda: "nothing")
@@ -71,7 +71,7 @@ class RkEnDeCipher:
             print("Cipherkey not found. Before ecr|dcr operation, please install cipher. Command to generate: ende --install")
             exit(1)
 
-ende = RkEnDeCipher()
+ende = EnDeCipher()
 if len(sys.argv) >= 2 and any(sys.argv[1] in s for s in ende.switcher.keys()):
     RkEnDeCipher().process(sys.argv)
 else:
